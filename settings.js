@@ -51,9 +51,17 @@ var settings = module.exports = {
         origin: "*",
         methods: "GET,PUT,POST,DELETE"
     },
+
+    // added projects for git integration
+    editorTheme: {
+       projects: {
+           enabled: true
+       }
+    },
     
     // Disbled Credential Secret
     credentialSecret: false
+    
 }
 
 if (process.env.NODE_RED_USERNAME && process.env.NODE_RED_PASSWORD) {
